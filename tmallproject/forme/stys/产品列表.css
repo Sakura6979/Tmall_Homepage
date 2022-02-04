@@ -1,0 +1,76 @@
+div.homepageCategoryProducts {
+    background-color: #F5F5F5;
+    padding         : 20px 10px;
+    margin          : 10px auto;
+    width           : 1013px;
+    
+}
+
+div.eachHomepageCategoryProducts {
+    margin: 40px 0px;
+}
+
+div.left-mark {
+    float           : left;
+    height          : 20px;
+    vertical-align  : top;
+    width           : 5px;
+    background-color: #19C8A9;
+}
+
+div.categoryTitle {
+    font-size    : 16px;
+    margin-left  : 30px;
+    color        : #646464;
+    font-weight  : bold;
+    margin-bottom: 4px
+}
+
+div.productItem {
+    width           : 189px;
+    height          : 285px;
+    border          : 1px solid white;
+    background-color: white;
+    margin          : 8px 4px;
+    float           : left;
+    cursor          : pointer;
+}
+
+div.productItem span.productItemDesc {
+    font-size: 12px;
+    color    : #666666;
+    display  : block;
+    padding  : 16px;
+}
+
+div.productItem span.productPrice {
+    font-size   : 16px;
+    color       : #FF003A;
+    display     : block;
+    padding-left: 16px;
+    margin-top  : -10px;
+}
+
+div.productItem img {
+    width : 187px;
+    height: 190px;
+}
+
+div.productItem img:hover {
+    /* 可以用来使图片透明化 */
+    opacity: 0.7;
+    filter : alpha(opacity=70);
+}
+
+a.productItemDescLink {
+    display        : block;
+    height         : 66px;
+    text-decoration: none;
+}
+
+img.endpng {
+    display: block;
+    width: 82px;
+    /* 块元素设置宽度后常见的居中操作 */
+    margin: 0 auto;
+}

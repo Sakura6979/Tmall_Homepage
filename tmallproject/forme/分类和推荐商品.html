@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://how2j.cn/study/css/bootstrap/3.3.6/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../前端源码集合css/reset.css">
+    <title>分类和推荐商品</title>
+
+    <style>
+        div.left,
+        div.right {
+            position: relative;
+            left: 0px;
+            right: 0px;
+        }
+
+        div.categoryMenu {
+            width: 200px;
+            background-color: #e2e2e3;
+            margin-left: 20px;
+            position: absolute;
+            z-index: 1;
+        }
+
+        div.categoryMenu a {
+            color: #000000
+        }
+
+        div.categoryMenu a:hover {
+            color: lightskyblue;
+            text-decoration: none;
+        }
+
+        div.productsAsideCategorys {
+            width: 800px;
+            height: 510px;
+            background-color: white;
+            margin-left: 220px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        div.productsAsideCategorys div.row {
+            margin: 24px 80px;
+        }
+
+        div.productsAsideCategorys div.row div.seperator {
+            margin-top: 20px;
+            border-bottom-style: dashed;
+            border-bottom-width: 1px;
+            border-bottom-color: #e7e7e7;
+        }
+
+        div.productsAsideCategorys a {
+            color: #999;
+            font-size: 14px;
+            margin: 8px;
+        }
+
+        div.productsAsideCategorys a:hover {
+            color: #C40000;
+            text-decoration: none;
+        }
+
+        div.eachCategory {
+            line-height: 30px;
+            padding-left: 10px;
+            font-size: 14px;
+        }
+
+        div.eachCategory span {
+            margin-right: 10px;
+        }
+
+        div.eachCategory:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="categoryWithCarousel">
+        <div class="left">
+            <div class="categoryMenu ">
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        平板电视
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        马桶
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        沙发
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        电热水器
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        平衡车
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        扫地机器人
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        原汁机
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        冰箱
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        空调
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        女表
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        男表
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        男士手拿包
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        男士西服
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        时尚男鞋
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        品牌女装
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        太阳镜
+                    </a>
+                </div>
+                <div class="eachCategory">
+                    <span class="glyphicon glyphicon-link"></span>
+                    <a href="javascript:;">
+                        安全座椅
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="productsAsideCategorys">
+                <div class="row">
+                    <a href="javascript:;">
+                        屏大影院
+                    </a>
+                    <a href="javascript:;">
+                        周末
+                    </a>
+                    <a href="javascript:;">
+                        新品特惠
+                    </a>
+                    <a href="javascript:;">
+                        32吋电视机
+                    </a>
+                    <a href="javascript:;">
+                        智能网络
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        USB高清解
+                    </a>
+                    <a href="javascript:;">
+                        芒果TV在线
+                    </a>
+                    <a href="javascript:;">
+                        抢购价
+                    </a>
+                    <a href="javascript:;">
+                        USB解码
+                    </a>
+                    <a href="javascript:;">
+                        32英吋
+                    </a>
+                    <a href="javascript:;">
+                        10核
+                    </a>
+                    <a href="javascript:;">
+                        TCL品牌日
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        不要赠品
+                    </a>
+                    <a href="javascript:;">
+                        新品上市
+                    </a>
+                    <a href="javascript:;">
+                        4K硬屏
+                    </a>
+                    <a href="javascript:;">
+                        领100元券
+                    </a>
+                    <a href="javascript:;" style="color: rgb(135, 206, 250);">
+                        智能高清
+                    </a>
+                    <a href="javascript:;">
+                        8月，酷暑
+                    </a>
+                    <a href="javascript:;" style="color: rgb(135, 206, 250);">
+                        8月大促
+                    </a>
+                    <a href="javascript:;">
+                        天猫定制
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        智能操作系统
+                    </a>
+                    <a href="javascript:;">
+                        金色外观
+                    </a>
+                    <a href="javascript:;">
+                        三星屏幕
+                    </a>
+                    <a href="javascript:;">
+                        客厅爆款
+                    </a>
+                    <a href="javascript:;">
+                        八核配置
+                    </a>
+                    <a href="javascript:;">
+                        限时特惠
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        限时特惠
+                    </a>
+                    <a href="javascript:;">
+                        热销爆款
+                    </a>
+                    <a href="javascript:;">
+                        4K全高清
+                    </a>
+                    <a href="javascript:;" style="color: rgb(135, 206, 250);">
+                        六核智能
+                    </a>
+                    <a href="javascript:;">
+                        14核4K
+                    </a>
+                    <a href="javascript:;">
+                        YUNOS
+                    </a>
+                    <a href="javascript:;" style="color: rgb(135, 206, 250);">
+                        YUNOS
+                    </a>
+                    <a href="javascript:;">
+                        64位处理器
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        YUNOS
+                    </a>
+                    <a href="javascript:;">
+                        微信电视
+                    </a>
+                    <a href="javascript:;">
+                        4k超清
+                    </a>
+                    <a href="javascript:;">
+                        64位真4K
+                    </a>
+                    <a href="javascript:;">
+                        10核机芯
+                    </a>
+                    <a href="javascript:;">
+                        V字黑釉底座
+                    </a>
+                    <a href="javascript:;">
+                        4K超清
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        64位14核
+                    </a>
+                    <a href="javascript:;">
+                        海量影视
+                    </a>
+                    <a href="javascript:;">
+                        人气爆款
+                    </a>
+                    <a href="javascript:;">
+                        限时特惠
+                    </a>
+                    <a href="javascript:;">
+                        真4K屏
+                    </a>
+                    <a href="javascript:;">
+                        65吋巨屏
+                    </a>
+                    <a href="javascript:;" style="color: rgb(135, 206, 250);">
+                        4K超清视界
+                    </a>
+                    <a href="javascript:;">
+                        限时特惠
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+                <div class="row ">
+                    <a href="javascript:;">
+                        55寸旗舰
+                    </a>
+                    <a href="javascript:;">
+                        4K机皇
+                    </a>
+                    <a href="javascript:;">
+                        曲面机皇
+                    </a>
+                    <a href="javascript:;" style="color: rgb(135, 206, 250);">
+                        轻薄4K
+                    </a>
+                    <div class="seperator"></div>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+</body>
+
+</html>

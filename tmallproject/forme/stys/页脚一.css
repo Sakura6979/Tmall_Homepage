@@ -1,0 +1,56 @@
+div.footer {
+    margin          : 0px 0px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e7e7e7;
+}
+
+div.footer_ensure {
+    margin-top   : 24px;
+    margin-bottom: 24px;
+    /* 将块内的文字或图片元素居中 */
+    text-align   : center;
+}
+
+div.footer_desc {
+    width           : 100%;
+    margin          : 0px auto;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: #e7e7e7;
+    padding-top     : 30px;
+}
+
+div.footer_desc div.descColumn {
+    width       : 20%;
+    float       : left;
+    padding-left: 40px;
+    /* text-align: center; */
+
+}
+
+span.descColumnTitle {
+    font-weight: bold;
+    font-size  : 16px;
+    color      : #646464;
+}
+
+div.footer_desc a {
+    display        : block;
+    padding-top    : 8px;
+    text-decoration: none;
+}
+
+body {
+    font-size  : 12px;
+    font-family: Arial;
+}
+
+a {
+    color: #909090;
+}
+
+a:hover {
+    text-decoration: none;
+    color          : #C40000;
+}
